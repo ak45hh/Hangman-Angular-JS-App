@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Kelly+Slab" rel="stylesheet">
+
+</head>
+<body ng-app="HangmanApp" ng-controller="GameController">
+	<div id="Headding">
+			<h1>HANGMAN GAME</h1>
+		</div>
+		<br><br>
+		<div id="word2guess"><h2> Word to Guess :: {{displayWord}} </h2>
+		</div>
+	<div id="game">
+		<div id="guessesleft">
+		Games Won :: {{won}}<br>
+		Games Lost :: {{lost}}<br>
+		Guesses Left :: {{guesses}}
+		</div>
+		<div id="incorrect">
+		<h3 class="red">Incorrect Guesses :: </h3><h4><span ng-repeat="letter in incorrectLetters">{{letter}}-</span></h4>
+		</div>
+		<div id="correct">
+		<h3 class="green">Correct Guesses :: </h3><h4><span ng-repeat="letter in correctLetters">{{letter}}-</span></h4>
+		</div>
+		<br>
+		<br>
+		<div id="inputarea">
+			<div>
+				<input type="text" name="guess" ng-model="input.letter">
+				<button ng-click="letterChoosen()">Submit</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: url('bg2.jpg');
+}
+
+#game{
+	width: 100%;
+	margin: 0 auto;
+}
+
+#Headding{
+	position: relative;
+	margin-top: 5%;
+	width: 100%;
+	text-align: center;
+}
+
+h1{
+	color: #3498db;
+	font-family: 'Acme', sans-serif;
+	font-size: 300%;
+}
+
+#word2guess{
+	text-align: center;
+}
+
+h2{
+	font-size: 200%;
+	color: #f1c40f;
+	font-family: 'Cabin Sketch', cursive;
+	font-family: 'Kelly Slab', cursive;
+}
+
+#guessesleft{
+	font-size: 200%;
+	font-family: 'Cabin Sketch', cursive;
+	position: relative;
+	color: #ff7675;
+	padding-top: 3%;
+	text-align: center;
+}
+
+#inputarea{
+	width: 100%;
+	position: relative;
+	text-align: center;
+	float: right;
+}
+
+#correct{
+	width: 30%;
+	position: relative;
+	color: #fff;
+	float: right;
+}
+
+#incorrect{
+	padding-left: 15%;
+	width: 30%;
+	float: left;
+	position: relative;
+	color: #fff;
+}
+
+h3{	
+	font-size: 180%;
+	font-family: 'Cabin Sketch', cursive;
+	font-family: 'Kelly Slab', cursive;
+}
+
+h4{
+	font-size: 180%;
+	font-family: 'Acme', sans-serif;
+}
+
+.green{
+	color: green;
+}
+
+.red{
+	color: red;
+}
